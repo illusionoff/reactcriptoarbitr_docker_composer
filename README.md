@@ -10,8 +10,8 @@ https://github.com/illusionoff/reactcriptoarbitr_test_squeeze
 
 ###### Репозиторий непосредственно для деплоя на сервере:
 https://github.com/illusionoff/reactcriptoarbitr_docker_composer_prod  
-Сайт проекта оригинальный без docker: [Criptoarbitr](http://criptoarbitr.178.20.42.150.sslip.io/)
-Сайт проекта c docker-compose: [Criptoarbitr](http://62.113.119.244/)
+Сайт проекта оригинальный без docker: [Criptoarbitr](http://criptoarbitr.178.20.42.150.sslip.io/)  
+  Сайт проекта c docker-compose: [Criptoarbitr](http://62.113.119.244/)
 
 #### Проект состоит из четырех контейнеров три из которых размещаются на docker hub, а один создается в момент запуска docker-composer
 
