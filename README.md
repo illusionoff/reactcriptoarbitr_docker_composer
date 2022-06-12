@@ -39,7 +39,7 @@ https://github.com/illusionoff/reactcriptoarbitr_docker_composer_prod
  Контейнер "nginx" используется как proxy сервер для маршрутизации запросов для "client" и "api"
  В контейнере "client" создается web server на основе nginx для запуска front-end в продакшен режиме
 
-Ссылки на контейнеры в Docker hub:
+##### Ссылки на контейнеры в Docker hub:
 * "basic" https://hub.docker.com/repository/docker/siniakoualex/reactcriptoarbitr_docker_composer_basic_1
 * "client" https://hub.docker.com/repository/docker/siniakoualex/reactcriptoarbitr_docker_composer_client_1
 * "api" https://hub.docker.com/repository/docker/siniakoualex/reactcriptoarbitr_docker_composer_api_1
