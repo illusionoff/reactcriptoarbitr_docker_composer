@@ -26,6 +26,7 @@ https://github.com/illusionoff/reactcriptoarbitr_docker_composer_prod
 
 
 ##### Для разработки  и тестирования запускаем на локальной машине:
+* > git clone https://github.com/illusionoff/reactcriptoarbitr_docker_composer.git .
 * > docker-compose -f  'docker-compose-dev.yml' up --build -d
 
 ##### Для размежения контейнеров "basic", "client", "api" в Docker hub на вашем сервере:
