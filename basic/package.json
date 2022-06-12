@@ -1,0 +1,20 @@
+{
+  "name": "criptoarbitr_test",
+  "version": "20.0.0",
+  "description": "criptoarbitr test cryptocurrency exchange bithumb.pro, gate.io nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js"
+  },
+  "author": "Siniakou Alex <siniakoualiaksandr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.31.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "reconnecting-websocket": "^4.4.0",
+    "ws": "^7.4.6"
+  }
+}

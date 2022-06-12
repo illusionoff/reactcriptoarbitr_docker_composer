@@ -1,0 +1,47 @@
+version: "3"
+services:
+  nginx:
+    depends_on:
+      - api
+      - client
+      - basic
+    restart: always
+    build:
+      dockerfile: Dockerfile.dev
+      context: "./nginx"
+    ports:
+      - "80:80"
+  basic:
+    build:
+      dockerfile: Dockerfile
+      context: "./basic"
+    volumes:
+      - logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "5"
+    image: siniakoualex/reactcriptoarbitr_docker_composer_basic_1
+  api:
+    depends_on:
+      - basic
+    build:
+      dockerfile: Dockerfile
+      context: "./server"
+    volumes:
+      - logs:/app/logs
+    image: siniakoualex/reactcriptoarbitr_docker_composer_api_1
+  client:
+    depends_on:
+      - basic
+      - api
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: "./client"
+    image: siniakoualex/reactcriptoarbitr_docker_composer_client_1
+volumes:
+  logs:
