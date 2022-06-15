@@ -24,6 +24,8 @@ https://github.com/illusionoff/reactcriptoarbitr_docker_composer_prod
 * docker контейнер "server" ( "api" - название контейнера)
 * docker контейнер "nginx" этоn контейнер создается в момент запуска docker-composer
 
+Для транспорта файлов данных .csv с "basic" контейнера в контейнер "server" используется том  volume с именем you_folder_logs
+
 
 ##### Для разработки  и тестирования запускаем на локальной машине:
 * > git clone https://github.com/illusionoff/reactcriptoarbitr_docker_composer.git .
